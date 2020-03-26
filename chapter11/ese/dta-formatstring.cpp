@@ -129,7 +129,7 @@ post_socketcall_hook(syscall_ctx_t *ctx)
     }
 
 #if DBG_PRINTS
-    fprintf(stderr, "(dta-execve) recv: %zu bytes from fd %u\n", len, fd);
+    fprintf(stderr, "(dta-formatstring) recv: %zu bytes from fd %u\n", len, fd);
 
     for(size_t i = 0; i < len; i++) {
       if(isprint(((char*)buf)[i])) fprintf(stderr, "%c", ((char*)buf)[i]);
@@ -137,7 +137,7 @@ post_socketcall_hook(syscall_ctx_t *ctx)
     }
     fprintf(stderr, "\n");
 
-    fprintf(stderr, "(dta-execve) tainting bytes %p -- 0x%x with tag 0x%x\n", 
+    fprintf(stderr, "(dta-formatstring) tainting bytes %p -- 0x%x with tag 0x%x\n", 
             buf, (uintptr_t)buf+len, 0x01);
 #endif
 
