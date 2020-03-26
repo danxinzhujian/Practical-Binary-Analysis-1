@@ -23,6 +23,6 @@ $ ./pin.sh -follow_execv -t ~/code/chapter11/ese/dta-formatstring.so -- ~/code/c
 ## Open another shell, then run:
 
 ```
-nc -u localhost 9999
-%s
+$ nc -u localhost 9999
+$ %s
 ```
