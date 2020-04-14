@@ -9,5 +9,5 @@ To test this exercise, copy only the file ```generate_key.py``` inside ```/home/
 
 ```
 $ cd ~/triton/pin-2.14-71313-gcc.4.4.7-linux/source/tools/Triton/build
-$ ./triton ~/code/chapter13/ese.py ~/code/chapter13/license 12345678
+$ ./triton ~/code/chapter13/generate_key.py ~/code/chapter13/license 12345678
 ```
